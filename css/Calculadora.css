@@ -1,0 +1,11 @@
+label{
+	color: #000000;
+	font-family: cursive ;
+}
+form{
+    background-color: deeppink;
+}
+body{
+ padding: 12px;
+ height: 100px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="css/calculadora.css">
+	 <title>Cálculo</title>
+</head>
+<body>
+  <form action="">
+  	<label>Número 1: </label>
+   	<input type="number" id="numero1" placeholder="Escribe un numero"><br><br>
+   	<label>Número 2: </label>
+    <input type="number" id="numero2"placeholder="Escribe el segundo número"><br><br>
+
+    <button type="button" class="Suma" onclick="(suma(10,50));"></button> 
+    <input type ='button' value="Resta" onclick="(resta());">
+    <input type ='button' value="Multiplicación" onclick="(multiplicacion());">
+    <input type ='button' value="División" onclick="(division());">
+    <p>El resultado es: <span id="el-resultado"></span></p>
+    
+</form>
+  <script type="text/javascript">
+     function suma(){
+     var numero1 = parseInt(document.getElementById("numero1").value);
+     var numero2 = parseInt(document.getElementById("numero2").value);
+     document.getElementById('el-resultado').innerHTML= numero1 + numero2;
+}
+     var resta=function(numero1, numero2){
+     var numero1= parseFloat(document.getElementById('numero1').value);
+     var numero2= parseFloat(document.getElementById('numero2').value);
+     document.getElementById('el-resultado').innerHTML= numero1 - numero2;
+}
+     var multiplicacion=function(numero1, numero2){
+     var numero1= parseFloat(document.getElementById('numero1').value);
+     var numero2= parseFloat(document.getElementById('numero2').value);
+      document.getElementById('el-resultado').innerHTML= numero1 * numero2;
+     
+}
+    var division=function(numero1, numero2){
+    var numero1= parseFloat(document.getElementById('numero1').value);
+    var numero2= parseFloat(document.getElementById('numero2').value);
+     document.getElementById('el-resultado').innerHTML= numero1 / numero2
+}
+
+ </script>
+</body>
+</html>
